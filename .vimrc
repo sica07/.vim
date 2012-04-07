@@ -1,5 +1,5 @@
 set nocompatible
-filetype on
+filetype off
 
 "++++++++++++++++++++++++"
 " VUNDLE PLUGIN SETTINGS "
@@ -65,6 +65,8 @@ Bundle 'sjl/gundo.vim'
 Bundle 'vim-scripts/SQLComplete.vim'
 "manipulating files controlled by CVS, SVN, SVK, git, bzr, and hg
 Bundle 'git://repo.or.cz/vcscommand'
+"solarized colorschme GREAT!!!
+Bundle 'altercation/vim-colors-solarized.git'
 
 " END VUNDLE PLUGIN SETTINGS "
 "++++++++++++++++++++++++++++"
@@ -150,9 +152,11 @@ set listchars=tab:▷⋅,trail:⋅,nbsp:⋅
 set number
 "Turn syntax highlighting on
 syntax on
-color dual
 "Set 256 color support
-set t_Co=256
+let g:solarized_termcolors=256
+"color dual
+color solarized
+set background=light
 "Ignore whitespace in diff
 set diffopt+=iwhite
 " highlights interpolated variables in sql strings and does sql-syntax highlighting. yay
@@ -248,8 +252,8 @@ let Tlist_Process_File_Always = 1 " To use the :TlistShowTag and the :TlistSho
 map <C-J> <C-W>j
 map <C-K> <C-W>k
 " switch to left/right window quickly
-map <C-J> <C-W>h
-map <C-K> <C-W>l
+map <C-h> <C-W>h
+map <C-l> <C-W>l
 " map ,f to display all lines with keyword under cursor and ask which one to
 " jump to
 nmap ,f [I:let nr = input("Which one: ")<Bar>exe "normal " . nr ."[\t"<CR>
@@ -291,7 +295,9 @@ if has("gui_running")
     set guioptions-=b
     "colorscheme zenburn
     "colorscheme twilight
-    colorscheme xoria256
+    set background=light
+    colorscheme solarized
+    "colorscheme xoria256
     "set the guicursor
     set guicursor=n-v-c:block-Cursor-blinkon0,ve:ver35-Cursor,o:hor50-Cursor,i-ci:ver25-Cursor,r-cr:hor20-Cursor,sm:block-Cursor-blinkwait175-blinkoff150-blinkon175
 
