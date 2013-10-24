@@ -49,6 +49,9 @@ endif"}}}
 if !exists("g:gundo_auto_preview")"{{{
     let g:gundo_auto_preview = 1
 endif"}}}
+if !exists("g:gundo_playback_delay")"{{{
+    let g:gundo_playback_delay = 60
+endif"}}}
 
 let s:has_supported_python = 0
 if g:gundo_prefer_python3 && has('python3')"{{{
@@ -322,11 +325,17 @@ function! s:GundoToggle()"{{{
 endfunction"}}}
 
 function! s:GundoShow()"{{{
-    call s:GundoOpen()
+    if !s:GundoIsVisible()
+        let g:gundo_target_n = bufnr('')
+        let g:gundo_target_f = @%
+        call s:GundoOpen()
+    endif
 endfunction"}}}
 
 function! s:GundoHide()"{{{
-    call s:GundoClose()
+    if s:GundoIsVisible()
+        call s:GundoClose()
+    endif
 endfunction"}}}
 
 "}}}
@@ -440,6 +449,14 @@ endfunction"}}}
 
 function! gundo#GundoToggle()"{{{
     call s:GundoToggle()
+endfunction"}}}
+
+function! gundo#GundoShow()"{{{
+    call s:GundoShow()
+endfunction"}}}
+
+function! gundo#GundoHide()"{{{
+    call s:GundoHide()
 endfunction"}}}
 
 function! gundo#GundoRenderGraph()"{{{
