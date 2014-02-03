@@ -178,6 +178,7 @@ if has("gui_running")	" GUI color and font settings
     set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ Book\ 10,Menlo\ Regular\ 12,Consolas\ Regular\ 13,Courier\ New\ Regular\ 14
 else                  " terminal color settings
     set t_Co=256                " 256 color mode
+    colors Tomorrow
 endif
 
 " ================ Custom Settings ========================

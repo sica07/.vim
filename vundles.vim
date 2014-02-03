@@ -17,6 +17,7 @@ Bundle "gmarik/vundle"
             "collections of colorschemes
             Bundle 'spf13/vim-colors'
             Bundle 'flazz/vim-colorschemes'
+            Bundle 'chriskempson/vim-tomorrow-theme'
             "delete, change and add such surroundings in pairs
             Bundle 'tpope/vim-surround'
             "Inserts matching bracket, paren, brace or quote
@@ -81,6 +82,7 @@ Bundle "gmarik/vundle"
             "phpunit integration
             Bundle 'joonty/vim-phpunitqf.git'
             Bundle 'klokane/vim-phpunit'
+            Bundle 'joonty/vdebug.git'
 
 
     " Javascript
