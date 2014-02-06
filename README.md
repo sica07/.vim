@@ -1,86 +1,86 @@
 #Mappings
 ##Moving
-* move between windows _<C-J>_ _<C-K>_ _<C-H>_ _<C-L>_
-* move between tabs _<S-H>_ _<S-L>_
-* zoom in and out of current window _,gz_
-* go to tab nr.1 _,1_
-* split window _vv_ _ss_
-* new split window _,v_ _,s_
-* adjust viewports _,=_
-* close current window _,q_
-* open quickfixwindow _,qo_
-* close quickfixwindow _,qc_
-* open a quickfix window for the last search _,q/_
+* move between windows `<C-J>` `<C-K>` `<C-H>` `<C-L>`
+* move between tabs `<S-H>` `<S-L>`
+* zoom in and out of current window `,gz`
+* go to tab nr.1 `,1`
+* split window `vv` `ss`
+* new split window `,v` `,s`
+* adjust viewports `,=`
+* close current window `,q`
+* open quickfixwindow `,qo`
+* close quickfixwindow `,qc`
+* open a quickfix window for the last search `,q/`
 
 ##Editing
-* get out of insert mode _jj_
-* jump to matching parents easy (replace %) _<Tab>_
-* yank from cursor to the end of the line _Y_
-* open a split window for each dirty file in git _,ocf_
-* edit the any file from current directory in a new window _,ew_  (press tab for autocomplete)
-* edit the any file from current directory in a split window _,es_ (press tab for autocomplete)
-* edit the any file from current directory in a vertical window _,ev_ (press tab for autocomplete)
-* edit the any file from current directory in a new tab _,et_
-* clear curent search highlight _//_
-* code folding levels _,f1_
+* get out of insert mode `jj`
+* jump to matching parents easy (replace %) `<Tab>`
+* yank from cursor to the end of the line `Y`
+* open a split window for each dirty file in git `,ocf`
+* edit the any file from current directory in a new window `,ew`  (press tab for autocomplete)
+* edit the any file from current directory in a split window `,es` (press tab for autocomplete)
+* edit the any file from current directory in a vertical window `,ev` (press tab for autocomplete)
+* edit the any file from current directory in a new tab `,et`
+* clear curent search highlight `//`
+* code folding levels `,f1`
 
 ## Neocomplache
-* complete everything _<TAB>_
+* complete everything `<TAB>`
 
 #NerdTree
-* toggle nerdtree _<C-E>_
-* Open the project tree and expose current file in the nerdtree with _<C-\>_
+* toggle nerdtree `<C-E>`
+* Open the project tree and expose current file in the nerdtree with `<C-\>`
 
 ##CtrlP
-* search for files _,,_
-* search for buffers _,._
-* search most recent used _,/_
+* search for files `,,`
+* search for buffers `,.`
+* search most recent used `,/`
 
 ##Easy Motion
-*leader key* _,w_
-* go to character _,wf_
-* go till _,wt_
-* go at beginning of word _,ww_
-* go to line down/up _,wj_ / _,wk_
+*leader key* `,w`
+* go to character `,wf`
+* go till `,wt`
+* go at beginning of word `,ww`
+* go to line down/up `,wj` / `,wk`
 
 ##Fugitive
 
-*leader key* _,g_
-* status _,gs_ 
-* diff _,gd_ 
-* commit _,gc_ 
-* blame _,gb_ 
-* log _,gl_ 
-* push _,gp_ 
-* read _,gr_ 
-* write _,gw_ 
-* edit _,ge_ 
-* gutter toggle  _,gg_ 
+*leader key* `,g`
+* status `,gs` 
+* diff `,gd` 
+* commit `,gc` 
+* blame `,gb` 
+* log `,gl` 
+* push `,gp` 
+* read `,gr` 
+* write `,gw` 
+* edit `,ge` 
+* gutter toggle  `,gg` 
 ##Gitv 
-* open the repository log _,gv_
+* open the repository log `,gv`
 
 ##Gundo
-* mapping _,u_
+* mapping `,u`
 
 ##PHPUnitTesting 
-* launch the unit test command for file name _,T %_
+* launch the unit test command for file name `,T %`
 
 ##Vim Sessions
-* save session _,ss_
-* list sessions _,sl_
-* open session _,so_
+* save session `,ss`
+* list sessions `,sl`
+* open session `,so`
 
 ##Tabularize
 *map leader* ,a
-* tabularize after = _,a=_
-* tabularize after : _,a:_
+* tabularize after = `,a=`
+* tabularize after : `,a:`
 * so on
 
 ##Tagbar
-* toggle tagbar _,tt_
+* toggle tagbar `,tt`
 
 ##Yankring
-* yankring toggle _,y_
+* yankring toggle `,y`
 
 #Vim debug (XDEBUG)
  * `<F5>`: start/run (to next breakpoint/end of script)
@@ -99,14 +99,14 @@
  * `<Leader>e`: evaluate the expression under visual highlight and display the result
 
 ##PIV (PHP specific keys)
-* PHP manual for the word under the cursor  _k_ 
-* php documentor _,pd_
+* PHP manual for the word under the cursor  `k` 
+* php documentor `,pd`
 
 ##NERD Commenter
 
-* comment out the current line or text selected in visual mode. _,cc_
-*Toggles the comment state of the selected line(s). _,c<space>_
-* Comments the given lines using only one set of multipart delimiters. _,cm_
-* Adds comment delimiters to the end of line and goes into insert mode between _,cA_
-*Comments the current line from the cursor to the end of line.  _,c$_
+* comment out the current line or text selected in visual mode. `,cc`
+*Toggles the comment state of the selected line(s). `,c<space>`
+* Comments the given lines using only one set of multipart delimiters. `,cm`
+* Adds comment delimiters to the end of line and goes into insert mode between `,cA`
+*Comments the current line from the cursor to the end of line.  `,c$`
 
