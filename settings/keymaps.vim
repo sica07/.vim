@@ -39,6 +39,9 @@ imap <c-.> <space>=><space>
 " ,oq to open it back up (rare)
 nmap <silent> ,qc :cclose<CR>
 nmap <silent> ,qo :copen<CR>
+" Stolen from Steve Losh vimrc: https://bitbucket.org/sjl/dotfiles/src/tip/vim/.vimrc
+" Open a Quickfix window for the last search.
+nnoremap <silent> <leader>q/ :execute 'vimgrep /'.@/.'/g %'<CR>:copen<CR>
 
 " Zoom in and out of current window with ,gz
 map <silent> <C-o> <C-w>o
@@ -58,6 +61,8 @@ nnoremap <leader>9 :tabn 9<cr>
 " this to vv and ss
 nnoremap <silent> vv <C-w>v
 nnoremap <silent> ss <C-w>s
+nnoremap <leader>v :vnew<CR>
+nnoremap <leader>s :new<CR>
 
 " Adjust viewports to the same size
 map <Leader>= <C-w>=
@@ -121,9 +126,6 @@ vnoremap > >gv
 " Yank from the cursor to the end of the line, to be consistent with C and D.
 nnoremap Y y$
 
-" Stolen from Steve Losh vimrc: https://bitbucket.org/sjl/dotfiles/src/tip/vim/.vimrc
-" Open a Quickfix window for the last search.
-nnoremap <silent> <leader>q/ :execute 'vimgrep /'.@/.'/g %'<CR>:copen<CR>
 
 " Open a split for each dirty file in git
 nnoremap ,ocf :OpenChangedFiles<CR>
