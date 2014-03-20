@@ -112,4 +112,5 @@ Bundle "gmarik/vundle"
             Bundle 'tpope/vim-markdown'
             "preview in browser html, md, rdoc, textile, etc files
             Bundle 'spf13/vim-preview'
+            Bundle 'mattn/emmet-vim'
 
