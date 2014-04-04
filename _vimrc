@@ -166,7 +166,7 @@ endif
 
 
 " ================ GUI =========================
-colors molokai
+colors Tomorrow
 
 if has("gui_running")	" GUI color and font settings
     set guioptions-=m           " Remove the menubar
