@@ -79,10 +79,11 @@ Bundle "gmarik/vundle"
     " PHP
             "php ide settings
             Bundle 'spf13/PIV'
-            "phpunit integration
-            Bundle 'joonty/vim-phpunitqf.git'
-            Bundle 'klokane/vim-phpunit'
+            "Bundle 'joonty/vim-phpunitqf.git'
+            "Bundle 'klokane/vim-phpunit'
             Bundle 'joonty/vdebug.git'
+            "phpunit, phpmd, phpcs integration
+            Bundle 'joonty/vim-phpqa'
 
 
     " Javascript
