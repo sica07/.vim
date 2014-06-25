@@ -52,8 +52,6 @@ Bundle "gmarik/vundle"
             Bundle 'nathanaelkane/vim-indent-guides'
             "undo list
             Bundle 'sjl/gundo.vim'
-            "multicursor
-            Bundle 'terryma/vim-multiple-cursors'
 
     " Git
             "a Git wrapper so awesome, it should be illegal

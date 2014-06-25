@@ -35,6 +35,12 @@
 * search for files `,,`
 * search for buffers `,.`
 * search most recent used `,/`
+* search for functions `,f`
+
+## Multiple cursors
+* while on a visual selected word, press `<C-N>`
+* to go to previous occurance and unselect the current onw `<C-P>`
+* to go to next occurance but unselect the current onw `<C-X>`
 
 ##Easy Motion
 *leader key* `,w`
@@ -109,4 +115,5 @@
 * Comments the given lines using only one set of multipart delimiters. `,cm`
 * Adds comment delimiters to the end of line and goes into insert mode between `,cA`
 *Comments the current line from the cursor to the end of line.  `,c$`
+
 
