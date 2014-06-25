@@ -24,10 +24,12 @@ Bundle "gmarik/vundle"
             Bundle 'spf13/vim-autoclose'
             "Fuzzy file, buffer, mru, tag, etc finder
             Bundle 'kien/ctrlp.vim'
+            "Fuzzy function find based on ctrlp.vim
+            Bundle 'tacahiroy/ctrlp-funky'
             "session manager
             Bundle 'vim-scripts/sessionman.vim'
             "match surroundings 
-            Bundle 'tsaleh/vim-matchit'
+            Bundle 'jwhitley/vim-matchit'
             "display marks
             Bundle 'vim-scripts/ShowMarks'
             "handy key mappings
@@ -41,7 +43,7 @@ Bundle "gmarik/vundle"
             "statusbar on steroids
              Bundle 'bling/vim-airline'
             "motions on speed
-            Bundle 'Lokaltog/vim-easymotion'
+            "Bundle 'Lokaltog/vim-easymotion'
             "Make gvim-only colorschemes work transparently in terminal vim
             Bundle 'godlygeek/csapprox'
             "better line numbers
@@ -50,6 +52,8 @@ Bundle "gmarik/vundle"
             Bundle 'nathanaelkane/vim-indent-guides'
             "undo list
             Bundle 'sjl/gundo.vim'
+            "multicursor
+            Bundle 'terryma/vim-multiple-cursors'
 
     " Git
             "a Git wrapper so awesome, it should be illegal
