@@ -54,7 +54,7 @@ set shiftwidth=4                " Indentation of 2 spaces
 set softtabstop=4
 set tabstop=4                   " Width of a TAB character
 set expandtab                   " Replace <TAB> with spacesP
-set linespace=0                 " No extra spaces between rows
+set linespace=10                 " No extra spaces between rows
 set ffs=unix,dos,mac            " Try recognizing dos, unix, and mac line endings.
 
 " Remove trailing whitespaces and ^M chars
@@ -166,7 +166,7 @@ endif
 
 
 " ================ GUI =========================
-colors solarized
+colors molokai
 
 if has("gui_running")	" GUI color and font settings
     set guioptions-=m           " Remove the menubar
@@ -175,10 +175,10 @@ if has("gui_running")	" GUI color and font settings
     set guioptions-=r           " Remove the right scroll
     set guioptions-=e           " Remove tabs as we will use airline's tabs
 
-    set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ Book\ 10,Menlo\ Regular\ 12,Consolas\ Regular\ 13,Courier\ New\ Regular\ 14
+    set guifont=Menlo\ for\ Powerline\ 13, DejaVu\ Sans\ Mono\ for\ Powerline\ Book\ 10,Menlo\ Regular\ 12,Consolas\ Regular\ 13,Courier\ New\ Regular\ 14
 else                  " terminal color settings
     set t_Co=256                " 256 color mode
-    colors solarized
+    colors xoria256
 endif
 
 " ================ Custom Settings ========================

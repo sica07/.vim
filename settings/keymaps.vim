@@ -129,3 +129,9 @@ nnoremap Y y$
 
 " Open a split for each dirty file in git
 nnoremap ,ocf :OpenChangedFiles<CR>
+
+"Create/edit file in the current directory
+nmap :ed :edit %:p:h/
+
+"var_dump currently selected var
+nmap ,vd Bv2iwyodie(var_dump(<esc>pa));</esc>
