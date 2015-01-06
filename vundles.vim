@@ -45,7 +45,7 @@ Bundle "gmarik/vundle"
             "motions on speed
             "Bundle 'Lokaltog/vim-easymotion'
             "Make gvim-only colorschemes work transparently in terminal vim
-            Bundle 'godlygeek/csapprox'
+            "Bundle 'godlygeek/csapprox'
             "better line numbers
             Bundle 'myusuf3/numbers.vim'
             "display indent levels
@@ -86,10 +86,6 @@ Bundle "gmarik/vundle"
             Bundle 'joonty/vdebug.git'
             "phpunit, phpmd, phpcs integration
             Bundle 'joonty/vim-phpqa'
-            "phpcomplete-extended"
-            Bundle 'Shougo/vimproc'
-            Bundle 'Shougo/unite.vim'
-            Bundle 'm2mdas/phpcomplete-extended'
 
 
     " Javascript

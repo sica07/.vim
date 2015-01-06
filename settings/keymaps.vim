@@ -90,7 +90,11 @@ map zh zH
 noremap! <F1> <Esc>
 
 " Quickly close the current window
-nnoremap <leader>q :q<CR>
+nnoremap qq :q<CR>
+
+" Quickly save
+nnoremap ww :w<CR>
+nnoremap ,w :w<CR>
 
 " Swap implementations of ` and ' jump to markers
 " By default, ' jumps to the marked line, ` jumps to the marked line and
@@ -133,5 +137,3 @@ nnoremap ,ocf :OpenChangedFiles<CR>
 "Create/edit file in the current directory
 nmap :ed :edit %:p:h/
 
-"var_dump currently selected var
-nmap ,vd Bv2iwyodie(var_dump(<esc>pa));</esc>

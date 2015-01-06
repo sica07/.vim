@@ -4,7 +4,7 @@
         let g:airline_powerline_fonts=1
         " If the previous symbols do not render for you then install a
         " powerline enabled font.
-        let g:airline_theme = 'molokai'
+        let g:airline_theme = 'base16'
         "autmatically displats all buffers when there's only one tab open
         let g:airline#extensions#tabline#enabled = 1
 
