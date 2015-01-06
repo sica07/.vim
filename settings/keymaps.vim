@@ -93,7 +93,6 @@ noremap! <F1> <Esc>
 nnoremap qq :q<CR>
 
 " Quickly save
-nnoremap ww :w<CR>
 nnoremap ,w :w<CR>
 
 " Swap implementations of ` and ' jump to markers
