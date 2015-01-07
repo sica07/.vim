@@ -183,16 +183,9 @@ endif
 
 " ================ Custom Settings ========================
 so ~/.vim/settings.vim
-
-
-
-
-
-
-
-
-
-
+//no matter what colorscheme I use I want folded and commented lines to be italic
+hi Folded gui=italic
+hi Comment gui=italic
 " ================ Custom functions  =================
 " Restore cursor to file position in previous editing session
 function! ResCur()
