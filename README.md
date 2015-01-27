@@ -8,9 +8,9 @@
 * new split window `,v` `,s`
 * adjust viewports `,=`
 * close current window `,q`
-* open quickfixwindow `,qo`
-* close quickfixwindow `,qc`
-* open a quickfix window for the last search `,q/`
+* open quickfixwindow `<C-Q>o`
+* close quickfixwindow `<C-Q>c`
+* open a quickfix window for the last search `<C-Q>/`
 
 ##Editing
 * get out of insert mode `jj`
@@ -43,7 +43,7 @@
 * to go to next occurance but unselect the current onw `<C-X>`
 
 ##Easy Motion
-*leader key* `,w`
+* leader key `,w`
 * go to character `,wf`
 * go till `,wt`
 * go at beginning of word `,ww`
@@ -51,7 +51,7 @@
 
 ##Fugitive
 
-*leader key* `,g`
+* leader key `,g`
 * status `,gs` 
 * diff `,gd` 
 * commit `,gc` 
@@ -62,11 +62,29 @@
 * write `,gw` 
 * edit `,ge` 
 * gutter toggle  `,gg` 
+
 ##Gitv 
 * open the repository log `,gv`
 
 ##Gundo
 * mapping `,u`
+
+##PHP QA
+* Show/hide code sniffer and mess detector violations `,qa`  
+* Show/hide code coverage markers `,qc`  
+
+##PHP Refactoring
+* PhpRenameLocalVariable `,rlv`
+* PhpRenameClassVariable `,rcv`
+* PhpRenameMethod `,rm`
+* PhpExtractUse `,eu`
+* PhpExtractConst `,ec`
+* PhpExtractClassProperty `,ep`
+* PhpExtractMethod `,em`
+* PhpCreateProperty `,np`
+* PhpDetectUnusedUseStatements `,du`
+* PhpAlignAssigns`,==`
+* PhpDocAll `,da`
 
 ##PHPUnitTesting 
 * launch the unit test command for file name `,T %`
@@ -111,9 +129,9 @@
 ##NERD Commenter
 
 * comment out the current line or text selected in visual mode. `,cc`
-*Toggles the comment state of the selected line(s). `,c<space>`
+* Toggles the comment state of the selected line(s). `,c<space>`
 * Comments the given lines using only one set of multipart delimiters. `,cm`
 * Adds comment delimiters to the end of line and goes into insert mode between `,cA`
-*Comments the current line from the cursor to the end of line.  `,c$`
+* Comments the current line from the cursor to the end of line.  `,c$`
 
 

@@ -175,7 +175,7 @@ if has("gui_running")	" GUI color and font settings
     set guioptions-=r           " Remove the right scroll
     set guioptions-=e           " Remove tabs as we will use airline's tabs
 
-    set guifont=Menlo\ for\ Powerline\ 13, DejaVu\ Sans\ Mono\ for\ Powerline\ Book\ 10,Menlo\ Regular\ 12,Consolas\ Regular\ 13,Courier\ New\ Regular\ 14
+    set guifont=Menlo\ for\ Powerline\ 13,DejaVu\ Sans\ Mono\ for\ Powerline\ Book\ 10,Menlo\ Regular\ 12,Consolas\ Regular\ 13,Courier\ New\ Regular\ 14
 else                  " terminal color settings
     set t_Co=256                " 256 color mode
     colors xoria256

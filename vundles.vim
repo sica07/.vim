@@ -75,7 +75,7 @@ Bundle "gmarik/vundle"
 
     " Snippets & AutoComplete
             Bundle 'Shougo/neocomplcache'
-            Bundle 'Shougo/neosnippet'
+            Bundle 'SirVer/ultisnips'
             Bundle 'honza/vim-snippets'
 
     " PHP
@@ -83,13 +83,16 @@ Bundle "gmarik/vundle"
             Bundle 'spf13/PIV'
             "Bundle 'joonty/vim-phpunitqf.git'
             "Bundle 'klokane/vim-phpunit'
-            Bundle 'joonty/vdebug.git'
-            "phpunit, phpmd, phpcs integration
+            "php syntax
+            Bundle 'StanAngeloff/php.vim'
+           "phpunit, phpmd, phpcs integration
             Bundle 'joonty/vim-phpqa'
+            Bundle 'shawncplus/phpcomplete.vim'
+            Bundle 'adoy/vim-php-refactoring-toolbox'
             "phpcomplete-extended"
-            Bundle 'Shougo/vimproc'
-            Bundle 'Shougo/unite.vim'
-            Bundle 'm2mdas/phpcomplete-extended'
+            "Bundle 'Shougo/vimproc'
+            ""Bundle 'Shougo/unite.vim'
+            ""Bundle 'm2mdas/phpcomplete-extended'
 
 
     " Javascript
