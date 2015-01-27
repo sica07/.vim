@@ -1,0 +1,34 @@
+# public method
+snippet mm
+	public function ${1:foo}()
+	{
+		${0}
+	}
+
+# private method
+snippet pm
+	private function ${1:foo}()
+	{
+		${0}
+	}
+# static method
+snippet sm
+	static function ${1:foo}()
+	{
+		${0}
+	}
+snippet dd
+	var_dump(${0}); die();
+snippet ar
+	$${1:arrayName} = [ '${2}' => ${3} ];
+snippet rt
+	return true;
+snippet rf
+	return false;
+snippet u
+	use ${1:Foo\Bar\Baz};
+	${0}
+snippet t
+	$this->${0}
+
+
