@@ -93,6 +93,8 @@ Bundle "gmarik/vundle"
             "Bundle 'Shougo/vimproc'
             ""Bundle 'Shougo/unite.vim'
             ""Bundle 'm2mdas/phpcomplete-extended'
+            "php debug"
+            Bundle 'joonty/vdebug.git'
 
 
     " Javascript
