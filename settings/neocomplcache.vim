@@ -17,10 +17,10 @@ endif
 let g:neocomplcache_keyword_patterns['default'] = '\h\w*'
 
 " Enable omni completion.
-autocmd FileType css,sass setlocal omnifunc=csscomplete#CompleteCSS
-autocmd FileType html,markdown,phtml,handlebars setlocal omnifunc=htmlcomplete#CompleteTags
-autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
-autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
+"autocmd FileType css,sass setlocal omnifunc=csscomplete#CompleteCSS
+"autocmd FileType html,markdown,phtml,handlebars setlocal omnifunc=htmlcomplete#CompleteTags
+"autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+"autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
 " Enable heavy omni completion.
 if !exists('g:neocomplcache_omni_patterns')
   let g:neocomplcache_omni_patterns = {}

@@ -1,128 +1,152 @@
-" ================ Bundle Setup ========================
+" ================ Plugin Setup ========================
 filetype off
 set rtp+=~/.vim/bundle/vundle
-call vundle#rc()
+call vundle#begin()
 
 " let Vundle manage Vundle (required)
-Bundle "gmarik/vundle"
+Plugin 'VundleVim/Vundle.vim'
 
-" ================ Bundles ============================
+" ================ Plugins ============================
 " General
             "tree explorer
-            Bundle 'scrooloose/nerdtree'
+            Plugin 'scrooloose/nerdtree'
             "nerdtree open in all tabs
-            Bundle 'jistr/vim-nerdtree-tabs'
+            Plugin 'jistr/vim-nerdtree-tabs'
             "famous colorscheme
-            Bundle 'altercation/vim-colors-solarized'
+            Plugin 'altercation/vim-colors-solarized'
             "collections of colorschemes
-            Bundle 'spf13/vim-colors'
-            Bundle 'flazz/vim-colorschemes'
-            Bundle 'chriskempson/vim-tomorrow-theme'
+            Plugin 'spf13/vim-colors'
+            Plugin 'flazz/vim-colorschemes'
+            Plugin 'chriskempson/vim-tomorrow-theme'
+            Plugin 'gosukiwi/vim-atom-dark'
             "delete, change and add such surroundings in pairs
-            Bundle 'tpope/vim-surround'
+            Plugin 'tpope/vim-surround'
             "Inserts matching bracket, paren, brace or quote
-            Bundle 'spf13/vim-autoclose'
+            Plugin 'spf13/vim-autoclose'
+            "Find in code and edit
+            Plugin 'dyng/ctrlsf.vim'
             "Fuzzy file, buffer, mru, tag, etc finder
-            Bundle 'kien/ctrlp.vim'
+            "Plugin 'junegunn/fzf'
+            "Plugin 'junegunn/fzf.vim'
+            Plugin 'ctrlpvim/ctrlp.vim'
             "Fuzzy function find based on ctrlp.vim
-            Bundle 'tacahiroy/ctrlp-funky'
-            "session manager
-            Bundle 'vim-scripts/sessionman.vim'
-            "match surroundings 
-            Bundle 'jwhitley/vim-matchit'
-            "display marks
-            Bundle 'vim-scripts/ShowMarks'
-            "handy key mappings
-            Bundle 'tpope/vim-unimpaired'
+            "Plugin 'tacahiroy/ctrlp-funky'
+            "search all files
+            Plugin 'rking/ag.vim'
+            "search and replace everywhere
+            Plugin 'skwp/greplace.vim'
             "search results counting
-            Bundle 'vim-scripts/IndexedSearch'
+            Plugin 'vim-scripts/IndexedSearch'
+            "session manager
+            Plugin 'vim-scripts/sessionman.vim'
+            "match surroundings 
+            Plugin 'jwhitley/vim-matchit'
+            "display marks
+            Plugin 'vim-scripts/ShowMarks'
+            "handy key mappings
+            Plugin 'tpope/vim-unimpaired'
             "Multiple cursors as in Texmate
-            Bundle "terryma/vim-multiple-cursors"
+            "Plugin "terryma/vim-multiple-cursors"
             "Yank ring
-            Bundle "skwp/YankRing.vim"
+            "Plugin "skwp/YankRing.vim"
             "statusbar on steroids
-             Bundle 'bling/vim-airline'
+             Plugin 'vim-airline/vim-airline'
+             Plugin 'vim-airline/vim-airline-themes'
             "motions on speed
-            "Bundle 'Lokaltog/vim-easymotion'
+            "Plugin 'Lokaltog/vim-easymotion'
             "Make gvim-only colorschemes work transparently in terminal vim
-            "Bundle 'godlygeek/csapprox'
-            "better line numbers
-            Bundle 'myusuf3/numbers.vim'
+            "Plugin 'godlygeek/csapprox'
+            "Relative line numbers
+            Plugin 'myusuf3/numbers.vim'
             "display indent levels
-            Bundle 'nathanaelkane/vim-indent-guides'
+            Plugin 'nathanaelkane/vim-indent-guides'
             "undo list
-            Bundle 'sjl/gundo.vim'
+            "Plugin 'sjl/gundo.vim'
 
     " Git
             "a Git wrapper so awesome, it should be illegal
-            Bundle 'tpope/vim-fugitive'
+            Plugin 'tpope/vim-fugitive'
             "git diff in the gutter
-            Bundle 'airblade/vim-gitgutter'
+            Plugin 'airblade/vim-gitgutter'
             "repository viewer
-            Bundle "gregsexton/gitv"
+            Plugin 'gregsexton/gitv'
 
     " General Programming
             "Syntax checking 
-            Bundle 'scrooloose/syntastic'
+            Plugin 'scrooloose/syntastic'
             "code commenting
-            Bundle 'scrooloose/nerdcommenter'
+            Plugin 'scrooloose/nerdcommenter'
             "best text alignment and filtering
-            Bundle 'godlygeek/tabular'
+            Plugin 'godlygeek/tabular'
             "sidebar for tags
             if executable('ctags')
-                Bundle 'majutsushi/tagbar'
+                Plugin 'majutsushi/tagbar'
             endif
 
     " Snippets & AutoComplete
-            Bundle 'Shougo/neocomplcache'
-            Bundle 'SirVer/ultisnips'
-            Bundle 'honza/vim-snippets'
+            Plugin 'Shougo/neocomplete.vim'
+            Plugin 'honza/vim-snippets'
+            Plugin 'SirVer/ultisnips'
 
     " PHP
             "php ide settings
-            Bundle 'spf13/PIV'
-            "Bundle 'joonty/vim-phpunitqf.git'
-            "Bundle 'klokane/vim-phpunit'
+            Plugin 'spf13/PIV'
+            "Plugin 'joonty/vim-phpunitqf.git'
+            "Plugin 'klokane/vim-phpunit'
             "php syntax
-            Bundle 'StanAngeloff/php.vim'
-           "phpunit, phpmd, phpcs integration
-            Bundle 'joonty/vim-phpqa'
-            Bundle 'shawncplus/phpcomplete.vim'
-            Bundle 'adoy/vim-php-refactoring-toolbox'
+            Plugin 'StanAngeloff/php.vim'
+            Plugin '2072/php-indenting-for-vim'
+            Plugin 'arnaud-lb/vim-php-namespace'
+            "php documentor
+            Plugin 'tobyS/vmustache'
+            Plugin 'tobyS/pdv'
+            "php code navigator
+            Plugin 'mkusher/padawan.vim'
+            Plugin 'mkusher/padawan.php-di'
+            "Plugin 'mkusher/padawan-symfony'
+            "Plugin 'pbogut/deoplete-padawan'
+            "phpunit, phpmd, phpcs integration
+            "Plugin 'shawncplus/phpcomplete.vim'
+            Plugin 'stephpy/vim-php-cs-fixer'
+            "Plugin 'joonty/vim-phpqa'
+            Plugin 'adoy/vim-php-refactoring-toolbox'
             "phpcomplete-extended"
-            "Bundle 'Shougo/vimproc'
-            ""Bundle 'Shougo/unite.vim'
-            ""Bundle 'm2mdas/phpcomplete-extended'
+            "Plugin 'Shougo/vimproc'
+            ""Plugin 'Shougo/unite.vim'
+            ""Plugin 'm2mdas/phpcomplete-extended'
             "php debug"
-            Bundle 'joonty/vdebug.git'
+            Plugin 'joonty/vdebug.git'
 
 
     " Javascript
+            Plugin 'carlitux/deoplete-ternjs'
             "highlight json syntax
-            Bundle 'elzr/vim-json'
+            Plugin 'elzr/vim-json'
             "highlight less syntax
-            "Bundle 'groenewege/vim-less'
+            "Plugin 'groenewege/vim-less'
             "indetation, highlight for js syntax
-            Bundle 'pangloss/vim-javascript'
+            Plugin 'pangloss/vim-javascript'
             "highlight jst/ejs syntax
-            Bundle 'briancollins/vim-jst'
+            Plugin 'briancollins/vim-jst'
             "indetation, highlight for cofee-script syntax
-            "Bundle 'kchmck/vim-coffee-script'
-            "Bundle 'claco/jasmine.vim'
+            "Plugin 'kchmck/vim-coffee-script'
+            "Plugin 'claco/jasmine.vim'
 
 
 
     " HTML
             "autoclose html tags
-            Bundle 'amirh/HTML-AutoCloseTag'
+            Plugin 'amirh/HTML-AutoCloseTag'
             "support for css3 syntax
-            Bundle 'hail2u/vim-css3-syntax'
+            Plugin 'hail2u/vim-css3-syntax'
             "support for haml,sass and scss syntax
-            Bundle 'tpope/vim-haml'
+            Plugin 'tpope/vim-haml'
+            "Emmmet
+            Plugin 'mattn/emmet-vim'
 
     " Misc
-            Bundle 'tpope/vim-markdown'
+            Plugin 'tpope/vim-markdown'
             "preview in browser html, md, rdoc, textile, etc files
-            Bundle 'spf13/vim-preview'
-            Bundle 'mattn/emmet-vim'
-
+            Plugin 'spf13/vim-preview'
+call vundle#end()
+filetype plugin indent on 

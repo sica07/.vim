@@ -11,10 +11,12 @@ let g:ctrlp_user_command = {
                 \ },
                 \ 'fallback': 'find %s -type f'
             \ }
+let g:ctrlp_match_window = 'top,order:ttb,min:1,max:30,results:30'
+let g:ctrlp_working_path_mode = 'wa'
 "Mappings
 "search files
-nnoremap <silent> <leader>, :CtrlP<CR>
+nnoremap <silent> <c-p> :CtrlP<CR>
 "search buffers
-nnoremap <silent> <leader>. :CtrlPBuffer<cr>
+nnoremap <silent> <c-n> :CtrlPBufTag<cr>
 "search most recent used
-nnoremap <silent> <leader>/ :CtrlPMRU<CR>
+nnoremap <silent> <c-e> :CtrlPMRUFiles<CR>

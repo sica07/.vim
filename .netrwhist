@@ -1,4 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
-let g:netrw_dirhist_1='/usr/lib/gnome-settings-daemon'
-let g:netrw_dirhist_2='/sys/devices/pci0000:00/0000:00:02.0/backlight/acpi_video0'
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/home/marius/.vim_b'
+let g:netrw_dirhist_2='/home/marius/.vim_b/settings'
+let g:netrw_dirhist_3='/home/marius'
+let g:netrw_dirhist_4='/home/marius/.vim'

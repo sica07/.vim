@@ -1,5 +1,4 @@
-"This settings are based on the .vimrc files found at:
-"https://github.com/skwp/dotfiles/blob/master/vimrc
+"This settings are based on the .vimrc files found at: "https://github.com/skwp/dotfiles/blob/master/vimrc
 "https://github.com/spf13/spf13-vim/blob/3.0/.vimrc
 "and
 "https://github.com/spf13/spf13-vim/blob/3.0/.vimrc
@@ -22,6 +21,7 @@ set cursorline                  " Highlight current line
 set gcr=a:blinkon0              " Disable cursor blink
 set visualbell                  " No sounds
 set autoread                    " Reload files changed outside vim
+set autowriteall                " Automatically write the file when switching buffers.
 set ruler                       " Show cursor position all the time
 set hidden                      " Allow buffer switching without saving 
 set clipboard=unnamed           " Yank to the default register (*) by default
@@ -33,7 +33,7 @@ set viewoptions=folds,options,cursor,unix,slash " Better Unix / Windows compatib
 filetype on
 filetype off
 set rtp+=~/.vim/bundle/vundle
-call vundle#rc()
+call vundle#begin()
 
 if filereadable(expand("~/.vim/vundles.vim"))
     source ~/.vim/vundles.vim
@@ -75,7 +75,7 @@ autocmd FileType c,cpp,css,java,javascript,perl,php,jade inoremap <silent> ;; :c
 autocmd FileType c,cpp,css,java,javascript,perl,php,jade inoremap <silent> ;; <ESC>:call <SID>appendSemiColon()<CR>
 
 
-" ================ Encodings ========================
+" ================ Encodings done right ========================
 set encoding=utf-8
 set termencoding=utf-8
 set fileencoding=utf-8
@@ -136,11 +136,15 @@ set scrolloff=3                 " Minimum lines to keep above and below cursor
 set sidescrolloff=15
 set sidescroll=1
 
+"Get rid of ugly split borders.
+hi vertsplit guifg=bg guibg=bg
+
 " Show tab number (useful for <leader>1, <leader>2.. mapping)
 autocmd VimEnter * set guitablabel=%N:\ %t\ %M
 
 " Always switch to the current file directory
-autocmd BufEnter * if bufname("") !~ "^\[A-Za-z0-9\]*://" | lcd %:p:h | endif
+" (commented because CtrlP will search just in the current folder if active)
+ autocmd BufEnter * if bufname("") !~ "^\[A-Za-z0-9\]*://" | lcd %:p:h | endif
 
 " ================ Statusbar =========================
 " I'm using airline plugin, but just in case...
@@ -163,11 +167,12 @@ if has('statusline')
     set statusline+=%=%-14.(%l,%c%V%)\ %p%%  " Right aligned file nav info
 endif
 
-
+"Git commit line should not be longer than  72 chars"
+autocmd Filetype gitcommit setlocal spell textwidth=72
 
 " ================ GUI =========================
-colors molokai
 
+colorscheme onedark
 if has("gui_running")	" GUI color and font settings
     set guioptions-=m           " Remove the menubar
     set guioptions-=T           " Remove the toolbar
@@ -175,15 +180,20 @@ if has("gui_running")	" GUI color and font settings
     set guioptions-=r           " Remove the right scroll
     set guioptions-=e           " Remove tabs as we will use airline's tabs
 
-    set guifont=Menlo\ for\ Powerline\ 13,DejaVu\ Sans\ Mono\ for\ Powerline\ Book\ 10,Menlo\ Regular\ 12,Consolas\ Regular\ 13,Courier\ New\ Regular\ 14
-else                  " terminal color settings
+    set guifont=Fira\ Mono\ for\ Powerline\ 14
+    "set guifont=Fira\ Mono\ for\ Powerline\ 14, Menlo\ for\ Powerline\ 13,DejaVu\ Sans\ Mono\ for\ Powerline\ Book\ 10,Menlo\ Regular\ 12,Consolas\ Regular\ 13,Courier\ New\ Regular\ 14
+elseif has("termguicolors")
+    set termguicolors
+else
     set t_Co=256                " 256 color mode
-    colors xoria256
+    let g:onedark_termcolors=256
+    colorscheme onedark
+    "colors xoria256
 endif
 
 " ================ Custom Settings ========================
 so ~/.vim/settings.vim
-//no matter what colorscheme I use I want folded and commented lines to be italic
+"no matter what colorscheme I use I want folded and commented lines to be italic
 hi Folded gui=italic
 hi Comment gui=italic
 " ================ Custom functions  =================
@@ -298,4 +308,15 @@ function! OpenChangedFiles()
     end
 endfunction
 command! OpenChangedFiles :call OpenChangedFiles()
+
+"-------------Auto-Commands--------------"
+"Automatically source the Vimrc file on save.
+
+augroup autosourcing
+	autocmd!
+	autocmd BufWritePost .vimrc source %
+augroup END
+
+
+
 

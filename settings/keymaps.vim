@@ -111,8 +111,8 @@ nnoremap N N:call PulseCursorLine()<cr>
 inoremap jj <Esc>
 
 " Jump to matching pairs easily, with Tab
-nnoremap <Tab> %
-vnoremap <Tab> %
+"nnoremap <Tab> %
+""vnoremap <Tab> %
 
 " Use Q to intelligently close a window
 " (if there are multiple windows into the same buffer)

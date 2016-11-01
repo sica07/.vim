@@ -1,2 +1,2 @@
-let g:ctrlp_extensions = ['funky']
-nnoremap <Leader>f :CtrlPFunky<Cr>
+"let g:ctrlp_extensions = ['funky']
+"nnoremap <Leader>f :CtrlPFunky<Cr>

@@ -13,6 +13,6 @@ let NERDTreeKeepTreeInNewTab=1
 
 "Mappings
 " Ctrl-Shift-E (explore)for nerd tree
-nmap <C-E> :NERDTreeToggle<CR>
+nnoremap <leader>e :NERDTreeToggle<CR>
 " Open the project tree and expose current file in the nerdtree with Ctrl-\
-nnoremap <silent> <C-\> :NERDTreeFind<CR>:vertical res 30<CR>
+"nnoremap <silent> <C-\> :NERDTreeFind<CR>:vertical res 30<CR>
