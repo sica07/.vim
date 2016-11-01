@@ -75,29 +75,6 @@ autocmd FileType c,cpp,css,java,javascript,perl,php,jade inoremap <silent> ;; :c
 autocmd FileType c,cpp,css,java,javascript,perl,php,jade inoremap <silent> ;; <ESC>:call <SID>appendSemiColon()<CR>
 
 
-" ================ Encodings done right ========================
-set encoding=utf-8
-set termencoding=utf-8
-set fileencoding=utf-8
-set fileencodings=ucs-bom,utf-8,big5,gb2312,latin1
-
-fun! ViewUTF8()
-    set encoding=utf-8
-    set termencoding=big5
-endfun
-
-fun! UTF8()
-    set encoding=utf-8
-    set termencoding=big5
-    set fileencoding=utf-8
-    set fileencodings=ucs-bom,big5,utf-8,latin1
-endfun
-
-fun! Big5()
-    set encoding=big5
-    set fileencoding=big5
-endfun
-
 
 " ================ Folds ============================
 
@@ -180,7 +157,8 @@ if has("gui_running")	" GUI color and font settings
     set guioptions-=r           " Remove the right scroll
     set guioptions-=e           " Remove tabs as we will use airline's tabs
 
-    set guifont=Fira\ Mono\ for\ Powerline\ 14
+    "set guifont=Fira\ Mono\ for\ Powerline\ 14
+    set guifont=FuraCode\ Nerd\ Font\ 12
     "set guifont=Fira\ Mono\ for\ Powerline\ 14, Menlo\ for\ Powerline\ 13,DejaVu\ Sans\ Mono\ for\ Powerline\ Book\ 10,Menlo\ Regular\ 12,Consolas\ Regular\ 13,Courier\ New\ Regular\ 14
 elseif has("termguicolors")
     set termguicolors
@@ -190,6 +168,30 @@ else
     colorscheme onedark
     "colors xoria256
 endif
+
+" ================ Encodings done right ========================
+set encoding=utf-8
+set termencoding=utf-8
+set fileencoding=utf-8
+set fileencodings=ucs-bom,utf-8,big5,gb2312,latin1
+
+fun! ViewUTF8()
+    set encoding=utf-8
+    set termencoding=big5
+endfun
+
+fun! UTF8()
+    set encoding=utf-8
+    set termencoding=big5
+    set fileencoding=utf-8
+    set fileencodings=ucs-bom,big5,utf-8,latin1
+endfun
+
+fun! Big5()
+    set encoding=big5
+    set fileencoding=big5
+endfun
+
 
 " ================ Custom Settings ========================
 so ~/.vim/settings.vim

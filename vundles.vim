@@ -52,6 +52,8 @@ Plugin 'VundleVim/Vundle.vim'
             "statusbar on steroids
              Plugin 'vim-airline/vim-airline'
              Plugin 'vim-airline/vim-airline-themes'
+             "unicode symbols for files
+             Plugin 'ryanoasis/vim-webdevicons'
             "motions on speed
             "Plugin 'Lokaltog/vim-easymotion'
             "Make gvim-only colorschemes work transparently in terminal vim
