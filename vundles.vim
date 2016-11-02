@@ -50,8 +50,9 @@ Plugin 'VundleVim/Vundle.vim'
             "Yank ring
             "Plugin "skwp/YankRing.vim"
             "statusbar on steroids
-             Plugin 'vim-airline/vim-airline'
-             Plugin 'vim-airline/vim-airline-themes'
+             Plugin 'itchyny/lightline.vim'
+             "Plugin 'vim-airline/vim-airline'
+             "Plugin 'vim-airline/vim-airline-themes'
              "unicode symbols for files
              Plugin 'ryanoasis/vim-webdevicons'
             "motions on speed

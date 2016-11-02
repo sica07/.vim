@@ -32,7 +32,7 @@ set viewoptions=folds,options,cursor,unix,slash " Better Unix / Windows compatib
 " ================ Vundle settings ==================
 filetype on
 filetype off
-set rtp+=~/.vim/bundle/vundle
+set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 if filereadable(expand("~/.vim/vundles.vim"))
@@ -157,8 +157,8 @@ if has("gui_running")	" GUI color and font settings
     set guioptions-=r           " Remove the right scroll
     set guioptions-=e           " Remove tabs as we will use airline's tabs
 
-    "set guifont=Fira\ Mono\ for\ Powerline\ 14
-    set guifont=FuraCode\ Nerd\ Font\ 12
+    "set guifont=Fira\ Mono\ for\ Powerline\ 10
+    set guifont=FuraCode\ Nerd\ Font\ 10
     "set guifont=Fira\ Mono\ for\ Powerline\ 14, Menlo\ for\ Powerline\ 13,DejaVu\ Sans\ Mono\ for\ Powerline\ Book\ 10,Menlo\ Regular\ 12,Consolas\ Regular\ 13,Courier\ New\ Regular\ 14
 elseif has("termguicolors")
     set termguicolors
@@ -318,7 +318,3 @@ augroup autosourcing
 	autocmd!
 	autocmd BufWritePost .vimrc source %
 augroup END
-
-
-
-
