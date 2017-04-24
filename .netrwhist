@@ -1,6 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_cnt =6
 let g:netrw_dirhist_1='/home/marius/.vim_b'
 let g:netrw_dirhist_2='/home/marius/.vim_b/settings'
 let g:netrw_dirhist_3='/home/marius'
 let g:netrw_dirhist_4='/home/marius/.vim'
+let g:netrw_dirhist_5='scp://rovis999@neuronsolutions.ro:2222//home/'
+let g:netrw_dirhist_6='scp://rovis999@neuronsolutions.ro:2222//home/rovis999/'

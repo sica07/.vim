@@ -19,6 +19,7 @@ Plugin 'VundleVim/Vundle.vim'
             Plugin 'flazz/vim-colorschemes'
             Plugin 'chriskempson/vim-tomorrow-theme'
             Plugin 'gosukiwi/vim-atom-dark'
+            Plugin 'chriskempson/base16-vim'
             "delete, change and add such surroundings in pairs
             Plugin 'tpope/vim-surround'
             "Inserts matching bracket, paren, brace or quote
@@ -65,6 +66,9 @@ Plugin 'VundleVim/Vundle.vim'
             Plugin 'nathanaelkane/vim-indent-guides'
             "undo list
             "Plugin 'sjl/gundo.vim'
+            "distraction-free writeing
+            Plugin 'junegunn/goyo.vim'
+            Plugin 'junegunn/limelight.vim'
 
     " Git
             "a Git wrapper so awesome, it should be illegal
@@ -93,19 +97,20 @@ Plugin 'VundleVim/Vundle.vim'
 
     " PHP
             "php ide settings
-            Plugin 'spf13/PIV'
+            "BREAKING the colorscheme and folding
+            """Plugin 'spf13/PIV'
             "Plugin 'joonty/vim-phpunitqf.git'
             "Plugin 'klokane/vim-phpunit'
             "php syntax
             Plugin 'StanAngeloff/php.vim'
             Plugin '2072/php-indenting-for-vim'
-            Plugin 'arnaud-lb/vim-php-namespace'
+            """Plugin 'arnaud-lb/vim-php-namespace'
             "php documentor
             Plugin 'tobyS/vmustache'
             Plugin 'tobyS/pdv'
             "php code navigator
-            Plugin 'mkusher/padawan.vim'
-            Plugin 'mkusher/padawan.php-di'
+            "Plugin 'mkusher/padawan.vim'
+            "Plugin 'mkusher/padawan.php-di'
             "Plugin 'mkusher/padawan-symfony'
             "Plugin 'pbogut/deoplete-padawan'
             "phpunit, phpmd, phpcs integration
@@ -113,16 +118,17 @@ Plugin 'VundleVim/Vundle.vim'
             Plugin 'stephpy/vim-php-cs-fixer'
             "Plugin 'joonty/vim-phpqa'
             Plugin 'adoy/vim-php-refactoring-toolbox'
+            "Plugin 'vim-php/tagbar-phpctags.vim'
             "phpcomplete-extended"
-            "Plugin 'Shougo/vimproc'
-            ""Plugin 'Shougo/unite.vim'
-            ""Plugin 'm2mdas/phpcomplete-extended'
+            """Plugin 'Shougo/vimproc'
+            """Plugin 'Shougo/unite.vim'
+            """Plugin 'm2mdas/phpcomplete-extended'
             "php debug"
             Plugin 'joonty/vdebug.git'
 
 
     " Javascript
-            Plugin 'carlitux/deoplete-ternjs'
+            "Plugin 'carlitux/deoplete-ternjs'
             "highlight json syntax
             Plugin 'elzr/vim-json'
             "highlight less syntax
@@ -134,6 +140,7 @@ Plugin 'VundleVim/Vundle.vim'
             "indetation, highlight for cofee-script syntax
             "Plugin 'kchmck/vim-coffee-script'
             "Plugin 'claco/jasmine.vim'
+            Plugin 'posva/vim-vue'
 
 
 
@@ -148,6 +155,8 @@ Plugin 'VundleVim/Vundle.vim'
             Plugin 'mattn/emmet-vim'
 
     " Misc
+            Plugin 'joanrivera/vim-zimwiki-syntax'
+            Plugin 'vimwiki/vimwiki'
             Plugin 'tpope/vim-markdown'
             "preview in browser html, md, rdoc, textile, etc files
             Plugin 'spf13/vim-preview'

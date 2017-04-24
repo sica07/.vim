@@ -21,7 +21,8 @@ let g:syntastic_javascript_checkers = ['jshint']
 "enable scss-lint "
 let g:syntastic_scss_checkers = ['scss-lint']
 "don't load php checkers because we use phpqa
-let g:loaded_syntastic_php_phpcs_checker = 0
-let g:loaded_syntastic_php_php_checker = 0
-let g:loaded_syntastic_php_phpmd_checker = 0
+let g:syntastic_php_checkers = ['php', 'phpcs', 'phpmd']
+"let g:loaded_syntastic_php_php_checker = 1
+"let g:loaded_syntastic_php_phpcs_checker = 0
+"let g:loaded_syntastic_php_phpmd_checker = 0
 

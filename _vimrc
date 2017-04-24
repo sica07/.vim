@@ -13,7 +13,7 @@ set nocompatible
 " ================ General Config ====================
 set number                      " Line numbers 
 set backspace=indent,eol,start  " Allow backspace in insert mode
-set history=50                  " Store 50 lines of command history 
+set history=100                 " Store 50 lines of command history 
 set showcmd                     " Show incomplete cmds down the bottom
 set showmode                    " Show current mode down the bottom
 set showmatch		                " Cursor shows matching elements ), } 
@@ -149,7 +149,6 @@ autocmd Filetype gitcommit setlocal spell textwidth=72
 
 " ================ GUI =========================
 
-colorscheme onedark
 if has("gui_running")	" GUI color and font settings
     set guioptions-=m           " Remove the menubar
     set guioptions-=T           " Remove the toolbar
@@ -157,40 +156,41 @@ if has("gui_running")	" GUI color and font settings
     set guioptions-=r           " Remove the right scroll
     set guioptions-=e           " Remove tabs as we will use airline's tabs
 
-    "set guifont=Fira\ Mono\ for\ Powerline\ 10
-    set guifont=FuraCode\ Nerd\ Font\ 10
-    "set guifont=Fira\ Mono\ for\ Powerline\ 14, Menlo\ for\ Powerline\ 13,DejaVu\ Sans\ Mono\ for\ Powerline\ Book\ 10,Menlo\ Regular\ 12,Consolas\ Regular\ 13,Courier\ New\ Regular\ 14
+    set guifont=Fira\ Mono\ for\ Powerline\ 12
+    "set guifont=FuraCode\ Nerd\ Font\ 10
+    "set guifont=Menlo\ for\ Powerline\ 13,DejaVu\ Sans\ Mono\ for\ Powerline\ Book\ 10,Menlo\ Regular\ 12,Consolas\ Regular\ 13,Courier\ New\ Regular\ 14
+     colorscheme base16-tomorrow
 elseif has("termguicolors")
     set termguicolors
 else
     set t_Co=256                " 256 color mode
     let g:onedark_termcolors=256
-    colorscheme onedark
+    colorscheme base16-onedark
     "colors xoria256
 endif
 
 " ================ Encodings done right ========================
-set encoding=utf-8
-set termencoding=utf-8
-set fileencoding=utf-8
-set fileencodings=ucs-bom,utf-8,big5,gb2312,latin1
+"set encoding=utf-8
+"set termencoding=utf-8
+"set fileencoding=utf-8
+"set fileencodings=ucs-bom,utf-8,big5,gb2312,latin1
 
-fun! ViewUTF8()
-    set encoding=utf-8
-    set termencoding=big5
-endfun
+"fun! ViewUTF8()
+    "set encoding=utf-8
+    "set termencoding=big5
+"endfun
 
-fun! UTF8()
-    set encoding=utf-8
-    set termencoding=big5
-    set fileencoding=utf-8
-    set fileencodings=ucs-bom,big5,utf-8,latin1
-endfun
+"fun! UTF8()
+    "set encoding=utf-8
+    "set termencoding=big5
+    "set fileencoding=utf-8
+    "set fileencodings=ucs-bom,big5,utf-8,latin1
+"endfun
 
-fun! Big5()
-    set encoding=big5
-    set fileencoding=big5
-endfun
+"fun! Big5()
+    "set encoding=big5
+    "set fileencoding=big5
+"endfun
 
 
 " ================ Custom Settings ========================

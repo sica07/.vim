@@ -1,9 +1,9 @@
 "Set the PHP mess detector  ruleset XML file
-let g:phpqa_messdetector_ruleset = "/var/www/html/phpmd.xml"
+"let g:phpqa_messdetector_ruleset = "/var/www/html/phpmd.xml"
 " Set the codesniffer args
-let g:phpqa_codesniffer_args = "--standard=Zend""
+"let g:phpqa_codesniffer_args = "--standard=Zend""
 " PHP executable (default = "php")
-" let g:phpqa_php_cmd='/path/to/php'
+ let g:phpqa_php_cmd='/usr/bin/php'
 "
 " " PHP Code Sniffer binary (default = "phpcs")
 " let g:phpqa_codesniffer_cmd='/path/to/phpcs'

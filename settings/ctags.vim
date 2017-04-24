@@ -1,2 +1,3 @@
-set tags=./tags;/,~/.vimtags
+"set tags=./tags;/,~/.vimtags
+"
 
