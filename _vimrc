@@ -157,7 +157,7 @@ if has("gui_running")	" GUI color and font settings
     set guioptions-=e           " Remove tabs as we will use airline's tabs
 
     set guifont=Fira\ Mono\ for\ Powerline\ 12
-    "set guifont=FuraCode\ Nerd\ Font\ 10
+    "set guifont=FuraCode\ Nerd\ Font\ 12
     "set guifont=Menlo\ for\ Powerline\ 13,DejaVu\ Sans\ Mono\ for\ Powerline\ Book\ 10,Menlo\ Regular\ 12,Consolas\ Regular\ 13,Courier\ New\ Regular\ 14
      colorscheme base16-tomorrow
 elseif has("termguicolors")
@@ -291,7 +291,17 @@ function! PulseCursorLine()
     windo set cursorline
     execute current_window . 'wincmd w'
 endfunction
-
+" Yank word into buffer t and use wget and hxselect to get function signature etc
+nnoremap <silent> <leader>d ve"ty<esc>:call Get_PHP_def()<cr>
+function! Get_PHP_def()
+    "let l:selection = s:get_visual_selection()  " Why not work?
+    let l:fn_name = substitute(@t, "_", "-", "g")
+    let l:page = system('wget -q -O - "php.net/manual/en/function.' . l:fn_name .  '.php" | hxnormalize -l 240 -x')
+    let l:synopsis = system('hxselect -c ".methodsynopsis" | sed -e "s/<[^>]*>//g"', l:page)
+    let l:title = system('hxselect -c ".dc-title" | sed -e "s/<[^>]*//g"', l:page)
+    echo title 
+    echo synopsis
+endfunction
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " OpenChangedFiles COMMAND
 " Open a split for each dirty file in git

@@ -54,8 +54,6 @@ Plugin 'VundleVim/Vundle.vim'
              Plugin 'itchyny/lightline.vim'
              "Plugin 'vim-airline/vim-airline'
              "Plugin 'vim-airline/vim-airline-themes'
-             "unicode symbols for files
-             Plugin 'ryanoasis/vim-webdevicons'
             "motions on speed
             "Plugin 'Lokaltog/vim-easymotion'
             "Make gvim-only colorschemes work transparently in terminal vim
@@ -69,6 +67,8 @@ Plugin 'VundleVim/Vundle.vim'
             "distraction-free writeing
             Plugin 'junegunn/goyo.vim'
             Plugin 'junegunn/limelight.vim'
+            "vs like incons
+            Plugin 'ryanoasis/vim-devicons'
 
     " Git
             "a Git wrapper so awesome, it should be illegal
@@ -119,12 +119,14 @@ Plugin 'VundleVim/Vundle.vim'
             "Plugin 'joonty/vim-phpqa'
             Plugin 'adoy/vim-php-refactoring-toolbox'
             "Plugin 'vim-php/tagbar-phpctags.vim'
-            "phpcomplete-extended"
-            """Plugin 'Shougo/vimproc'
-            """Plugin 'Shougo/unite.vim'
-            """Plugin 'm2mdas/phpcomplete-extended'
+            "phpcomplete-extended" (lots of errors on indexing)
+            ""Plugin 'Shougo/vimproc'
+            ""Plugin 'Shougo/unite.vim'
+            ""Plugin 'm2mdas/phpcomplete-extended'
             "php debug"
             Plugin 'joonty/vdebug.git'
+            "php complete"
+            Plugin 'lvht/phpcd.vim'
 
 
     " Javascript
