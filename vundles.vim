@@ -85,10 +85,12 @@ Plugin 'VundleVim/Vundle.vim'
             Plugin 'scrooloose/nerdcommenter'
             "best text alignment and filtering
             Plugin 'godlygeek/tabular'
+            "check the editorconfig file specifications
+            Plugin 'editorconfig/editorconfig-vim'
             "sidebar for tags
-            if executable('ctags')
-                Plugin 'majutsushi/tagbar'
-            endif
+            "if executable('ctags')
+                "Plugin 'majutsushi/tagbar'
+            "endif
 
     " Snippets & AutoComplete
             Plugin 'Shougo/neocomplete.vim'
