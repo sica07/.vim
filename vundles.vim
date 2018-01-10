@@ -156,6 +156,9 @@ Plugin 'VundleVim/Vundle.vim'
             "Emmmet
             Plugin 'mattn/emmet-vim'
 
+    " PYTHON 
+            Plugin 'nvie/vim-flake8'
+
     " Misc
             Plugin 'joanrivera/vim-zimwiki-syntax'
             Plugin 'vimwiki/vimwiki'
