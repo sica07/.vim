@@ -33,7 +33,7 @@ Plugin 'VundleVim/Vundle.vim'
             "Fuzzy function find based on ctrlp.vim
             "Plugin 'tacahiroy/ctrlp-funky'
             "search all files
-            Plugin 'rking/ag.vim'
+            "Plugin 'rking/ag.vim'
             "search and replace everywhere
             Plugin 'skwp/greplace.vim'
             "search results counting
@@ -91,6 +91,9 @@ Plugin 'VundleVim/Vundle.vim'
             "if executable('ctags')
                 "Plugin 'majutsushi/tagbar'
             "endif
+            "Documentation for many languages
+            Plugin 'dbeniamine/cheat.sh-vim'
+
 
     " Snippets & AutoComplete
             Plugin 'Shougo/neocomplete.vim'
@@ -160,6 +163,8 @@ Plugin 'VundleVim/Vundle.vim'
 
     " PYTHON 
             Plugin 'nvie/vim-flake8'
+            Plugin 'vim-scripts/indentpython.vim'
+            Plugin 'python-mode/python-mode.vim'
 
     " Misc
             Plugin 'joanrivera/vim-zimwiki-syntax'

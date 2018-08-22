@@ -156,11 +156,10 @@ if has("gui_running")	" GUI color and font settings
     set guioptions-=r           " Remove the right scroll
     set guioptions-=e           " Remove tabs as we will use airline's tabs
 
-    set guifont=Fira\ Mono\ for\ Powerline\ 14
-    "set guifont=FuraCode\ Nerd\ Font\ 12
-    "set guifont=Menlo\ for\ Powerline\ 15,DejaVu\ Sans\ Mono\ for\ Powerline\ Book\ 10,Menlo\ Regular\ 12,Consolas\ Regular\ 13,Courier\ New\ Regular\ 14
-    "colorscheme base16-tomorrow
-    colorscheme lightcolors
+    set guifont=Fura\ Mono\ Nerd\ Font\ 12
+    ""set guifont=Iosevka\ Term\ 12,Menlo\ for\ Powerline\ 10,DejaVu\ Sans\ Mono\ for\ Powerline\ Book\ 10,Menlo\ Regular\ 12,Consolas\ Regular\ 13,Courier\ New\ Regular\ 14
+     ""colorscheme base16-tomorrow
+     colorscheme dracula
 elseif has("termguicolors")
     set termguicolors
 else

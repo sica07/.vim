@@ -25,3 +25,5 @@ nnoremap <silent> <c-p> :CtrlP<CR>
 nnoremap <silent> <c-n> :CtrlPBufTag<cr>
 "search most recent used
 nnoremap <silent> <c-e> :CtrlPMRUFiles<CR>
+"search files
+nnoremap <silent> <c-u> :CtrlPBuffer<CR>

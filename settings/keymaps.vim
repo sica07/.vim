@@ -33,7 +33,7 @@ map <S-l> gt
 nnoremap <leader>t :tabnew<CR>
 
 " gary bernhardt's hashrocket
-imap <c-.> <space>=><space>
+imap <C-.> <space>=><space>
 
 " ,q to toggle quickfix window (where you have stuff like GitGrep)
 " ,oq to open it back up (rare)
@@ -135,4 +135,7 @@ nnoremap ,ocf :OpenChangedFiles<CR>
 
 "Create/edit file in the current directory
 nmap :ed :edit %:p:h/
+
+" Write readonly file
+cnoremap w!! w !sudo tee > /dev/null %
 
