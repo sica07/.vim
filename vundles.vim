@@ -69,6 +69,7 @@ Plugin 'VundleVim/Vundle.vim'
             Plugin 'junegunn/limelight.vim'
             "vs like incons
             Plugin 'ryanoasis/vim-devicons'
+            Plugin 'mattn/calendar-vim'
 
     " Git
             "a Git wrapper so awesome, it should be illegal

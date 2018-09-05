@@ -149,6 +149,7 @@ autocmd Filetype gitcommit setlocal spell textwidth=72
 
 " ================ GUI =========================
 
+set background=light
 if has("gui_running")	" GUI color and font settings
     set guioptions-=m           " Remove the menubar
     set guioptions-=T           " Remove the toolbar
@@ -156,17 +157,22 @@ if has("gui_running")	" GUI color and font settings
     set guioptions-=r           " Remove the right scroll
     set guioptions-=e           " Remove tabs as we will use airline's tabs
 
-    set guifont=Fura\ Mono\ Nerd\ Font\ 12
-    ""set guifont=Iosevka\ Term\ 12,Menlo\ for\ Powerline\ 10,DejaVu\ Sans\ Mono\ for\ Powerline\ Book\ 10,Menlo\ Regular\ 12,Consolas\ Regular\ 13,Courier\ New\ Regular\ 14
+    set guifont=Fura\ Mono\ Nerd\ Font\ 10
+    "set guifont=Iosevka\ Term\ 12,Menlo\ for\ Powerline\ 10,DejaVu\ Sans\ Mono\ for\ Powerline\ Book\ 10,Menlo\ Regular\ 12,Consolas\ Regular\ 13,Courier\ New\ Regular\ 14
      ""colorscheme base16-tomorrow
      colorscheme dracula
 elseif has("termguicolors")
     set termguicolors
+    color base16-solarized-light
+    "tmux specific settings
+    let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+    let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 else
     set t_Co=256                " 256 color mode
-    let g:onedark_termcolors=256
-    "colorscheme base16-onedark
-    colors xoria256
+    ""let g:onedark_termcolors=256
+    ""colorscheme base16-onedark
+    "colors base16-material-darker
+    color xoria256
 endif
 
 " ================ Encodings done right ========================
