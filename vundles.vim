@@ -1,3 +1,4 @@
+let g:python_host_prog='/usr/bin/python3'
 " ================ Plugin Setup ========================
 filetype off
 set rtp+=~/.vim/bundle/vundle
@@ -12,6 +13,8 @@ Plugin 'VundleVim/Vundle.vim'
             Plugin 'scrooloose/nerdtree'
             "nerdtree open in all tabs
             Plugin 'jistr/vim-nerdtree-tabs'
+            "Homepage"
+            Plugin 'mhinz/vim-startify'
             "famous colorscheme
             Plugin 'altercation/vim-colors-solarized'
             "collections of colorschemes
@@ -36,6 +39,7 @@ Plugin 'VundleVim/Vundle.vim'
             "Plugin 'rking/ag.vim'
             "search and replace everywhere
             Plugin 'skwp/greplace.vim'
+            Plugin 'tpope/vim-abolish'
             "search results counting
             Plugin 'vim-scripts/IndexedSearch'
             "session manager
@@ -97,17 +101,22 @@ Plugin 'VundleVim/Vundle.vim'
 
 
     " Snippets & AutoComplete
-            Plugin 'Shougo/neocomplete.vim'
+            Plugin 'Shougo/neocomplete'
+            "Plugin 'Shougo/deoplete.nvim'
+            "Plugin 'ncm2/ncm2'
+            "Plugin 'roxma/nvim-yarp'
+            "Plugin 'roxma/vim-hug-neovim-rpc'
             Plugin 'honza/vim-snippets'
             Plugin 'SirVer/ultisnips'
 
     " PHP
             "php ide settings
-            "BREAKING the colorscheme and folding
+            ""BREAKING the colorscheme and folding
             """Plugin 'spf13/PIV'
             "Plugin 'joonty/vim-phpunitqf.git'
             "Plugin 'klokane/vim-phpunit'
             "php syntax
+            Plugin 'phpactor/ncm2-phpactor'
             Plugin 'StanAngeloff/php.vim'
             Plugin '2072/php-indenting-for-vim'
             """Plugin 'arnaud-lb/vim-php-namespace'
@@ -132,6 +141,7 @@ Plugin 'VundleVim/Vundle.vim'
             "php debug"
             Plugin 'joonty/vdebug.git'
             "php complete"
+            "Plugin 'phpactor/phpactor'
             Plugin 'lvht/phpcd.vim'
 
 
