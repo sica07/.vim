@@ -15,6 +15,10 @@ Plugin 'VundleVim/Vundle.vim'
             Plugin 'jistr/vim-nerdtree-tabs'
             "Homepage"
             Plugin 'mhinz/vim-startify'
+            "Change to project root"
+            Plugin 'airblade/vim-rooter'
+            "Project management"
+            "Plugin 'amiorin/vim-project'
             "famous colorscheme
             Plugin 'altercation/vim-colors-solarized'
             "collections of colorschemes
@@ -67,7 +71,7 @@ Plugin 'VundleVim/Vundle.vim'
             "display indent levels
             Plugin 'nathanaelkane/vim-indent-guides'
             "undo list
-            "Plugin 'sjl/gundo.vim'
+            Plugin 'sjl/gundo.vim'
             "distraction-free writeing
             Plugin 'junegunn/goyo.vim'
             Plugin 'junegunn/limelight.vim'

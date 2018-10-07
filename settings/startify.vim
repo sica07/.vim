@@ -11,6 +11,7 @@ let g:ascii = [
           \]
 let g:startify_custom_header =
       \ 'map(g:ascii + startify#fortune#boxed(), "\"   \".v:val")'
+let g:startify_bookmarks = [{'fsp':'~/Templates/FSPlaza.laravel'}]
 
 function! s:list_commits()
     let git = 'git -C ' .getcwd()
@@ -22,8 +23,8 @@ function! s:list_commits()
 let g:startify_lists = [
           \ { 'type': 'sessions'                 , 'header': ['   Sessions']       } ,
           \ { 'type': 'bookmarks'                , 'header': ['   Bookmarks']      } ,
-          \ { 'type': 'files'                    , 'header': ['   Files']            } ,
           \ { 'type': 'dir'                      , 'header': ['   '. getcwd()] } ,
+          \ { 'type': 'files'                    , 'header': ['   Files']            } ,
           \ { 'type': function('s:list_commits') , 'header': ['   Commits']        } ,
           \ { 'type': 'commands'                 , 'header': ['   Commands']       } ,
           \ ]
