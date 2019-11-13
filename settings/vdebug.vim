@@ -1,7 +1,7 @@
 let g:vdebug_options = {
 \ "continuous_mode" : 0,
 \ "port" : 9001,
-\ "server" : '172.21.0.2',
+\ "server" : '192.168.1.114',
 \ "timeout" : 20,
 \ "on_close" : 'detach',
 \ "auto_start" : 0,
@@ -14,6 +14,5 @@ let g:vdebug_options = {
 \ "watch_window_style" : 'expanded',
 \ "marker_default" : '⬦',
 \ "marker_closed_tree" : '▸',
-\ "marker_open_tree" : '▾',
-\ "path_maps" : {'/var/www/html': '/home/marius/Templates/marketplace/shopogen/'}
+\ "marker_open_tree" : '▾'
 \ }

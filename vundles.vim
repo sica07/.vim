@@ -39,8 +39,6 @@ Plugin 'VundleVim/Vundle.vim'
             Plugin 'ctrlpvim/ctrlp.vim'
             "Fuzzy function find based on ctrlp.vim
             "Plugin 'tacahiroy/ctrlp-funky'
-            "search all files
-            "Plugin 'rking/ag.vim'
             "search and replace everywhere
             Plugin 'skwp/greplace.vim'
             Plugin 'tpope/vim-abolish'
@@ -97,9 +95,9 @@ Plugin 'VundleVim/Vundle.vim'
             "check the editorconfig file specifications
             Plugin 'editorconfig/editorconfig-vim'
             "sidebar for tags
-            "if executable('ctags')
-                "Plugin 'majutsushi/tagbar'
-            "endif
+            if executable('ctags')
+                Plugin 'majutsushi/tagbar'
+            endif
             "Documentation for many languages
             Plugin 'dbeniamine/cheat.sh-vim'
 
@@ -187,5 +185,6 @@ Plugin 'VundleVim/Vundle.vim'
             Plugin 'tpope/vim-markdown'
             "preview in browser html, md, rdoc, textile, etc files
             Plugin 'spf13/vim-preview'
+            Plugin 'wakatime/vim-wakatime'
 call vundle#end()
 filetype plugin indent on 

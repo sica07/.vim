@@ -12,7 +12,7 @@ let NERDTreeHighlightCursorline=1
 let NERDTreeKeepTreeInNewTab=1
 
 "Mappings
-" Ctrl-Shift-E (explore)for nerd tree
-nnoremap <leader>e :NERDTreeToggle<CR>
+" Alt+1 (explore)for nerd tree
+nnoremap <Esc>1 :NERDTreeToggle<CR>
 " Open the project tree and expose current file in the nerdtree with Ctrl-\
 "nnoremap <silent> <C-\> :NERDTreeFind<CR>:vertical res 30<CR>

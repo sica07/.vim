@@ -11,7 +11,7 @@ let g:ascii = [
           \]
 let g:startify_custom_header =
       \ 'map(g:ascii + startify#fortune#boxed(), "\"   \".v:val")'
-let g:startify_bookmarks = [{'fsp':'~/Templates/FSPlaza.laravel'}]
+let g:startify_bookmarks = [{'fsp':'~/Templates/FSPlaza.laravel'},{'api':'~/Templates/api'}]
 
 function! s:list_commits()
     let git = 'git -C ' .getcwd()

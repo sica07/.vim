@@ -1,1 +1,0 @@
-nnoremap  <C-a> :Ag
